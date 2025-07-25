@@ -42,9 +42,17 @@
 .deep-gray{
     color: rgba(0, 0, 0, 0.5);
 }
+.btn{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgba(233, 90, 8, 1);
+    padding: 19px 80px;
+    border: none;
+}
 
 main{
-    
+    margin: 120px auto;
 }
 
 
@@ -87,23 +95,63 @@ main{
 .banner{
     justify-content: center;
     align-items: end;
+    
 }
 .banner-text{
-    width: 570px;
+    max-width: 585px;
 }
 .banner-title{
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 800;
 }
 .banner-description{
     font-size: 1.4rem;
+    
 }
 
-/* .hero-banner .hero-img{
+.hero-banner .hero-img{
     width: 100%;
-} */
+}
 
+/* Banner section Style End */
 
+/* Our Plant section Style start */
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card-img{
+    width: 100%;
+}
+.our-plants{
+
+    text-align: center;
+    justify-items: center;
+   
+
+}
+
+.our-plants-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.our-plants-description{
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+}
+.flower-name{
+    font-size: 1.4rem;
+    font-size: 500;
+    margin-top: 30px;
+}
+.price{
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -116,8 +164,12 @@ main{
 
 /* Responsive Media Query  Start*/
 @media screen and (max-width:576px){
-     .banner{
+    
+    /* banner responsive */
+    .banner{
         flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .banner-text{
     width: 370px;
@@ -126,4 +178,21 @@ main{
     font-size: 2rem;
     font-weight: bold;   
 }
+
+/* cards responsive */
+.cards-container{
+    grid-template-columns: repeat(2, 1fr);
 }
+
+.btn{
+    text-wrap: nowrap;
+}
+
+
+
+
+
+
+
+}
+
