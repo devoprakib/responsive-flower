@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 .inter-font {
@@ -7,6 +7,14 @@
   font-weight: 400;
   font-style: normal;
 }
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 *{
     margin: 0px;
@@ -35,7 +43,9 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-
+main{
+    
+}
 
 
 /* shared style end */
@@ -70,8 +80,28 @@
     color: rgba(37, 36, 50, 1);
 }
 
+/* navbar style end */
 
+/* Banner section Style start */
 
+.banner{
+    justify-content: center;
+    align-items: end;
+}
+.banner-text{
+    width: 570px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 1.4rem;
+}
+
+/* .hero-banner .hero-img{
+    width: 100%;
+} */
 
 
 
@@ -85,9 +115,15 @@
 
 
 /* Responsive Media Query  Start*/
-@media screen and (max-width:576px) {
-
-   
-
-    
+@media screen and (max-width:576px){
+     .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+    width: 370px;
+}
+.banner-title{
+    font-size: 2rem;
+    font-weight: bold;   
+}
 }
