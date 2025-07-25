@@ -71,7 +71,7 @@ main{
     gap: 590px;
 }
 
-.nav-items li{
+.nav-items .nav-item{
     list-style: none;
 
 }
@@ -143,7 +143,7 @@ main{
 }
 .flower-name{
     font-size: 1.4rem;
-    font-size: 500;
+    font-weight: 500;
     margin-top: 30px;
 }
 .price{
@@ -152,6 +152,50 @@ main{
     margin-top: 5px;
     margin-bottom: 30px;
 }
+
+
+/* Plants Lover section style start*/
+.plant-lover-container{
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    margin-top: 230px;
+}
+
+.badge-position{
+    position: relative;
+}
+
+.badge-img{
+    position: absolute;
+    height: 248px;
+    width: 248px;
+    margin: 0 auto;
+    left: 400px;
+    top: -100px;
+    z-index: 1;
+    
+}
+
+.lover-reviews{
+    box-sizing: border-box;
+    width: 540px;
+    padding: 30px;
+}
+.plant-lover-title{
+    font-size: 3.1rem;
+    font-weight: 800;
+}
+.review{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.lover-img{
+    width: 100%;
+    
+}
+
 
 
 
@@ -164,7 +208,11 @@ main{
 
 /* Responsive Media Query  Start*/
 @media screen and (max-width:576px){
+   
+    /* navbar responsiv */
     
+
+
     /* banner responsive */
     .banner{
         flex-direction: column-reverse;
@@ -186,6 +234,15 @@ main{
 
 .btn{
     text-wrap: nowrap;
+}
+
+
+/* Plants Lover */
+.badge-image{
+    display: none;
+}
+.plant-lover-container{
+    flex-direction: column;
 }
 
 
