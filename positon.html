@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .display-flex{
+            display: flex;
+        }
+       .latest-deal-text{
+    text-align: center;
+    margin: 120px auto;
+    width: 800px;
+}
+.deal-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.deal-description{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+.deal-cards-container{
+    gap: 20px;
+    margin: 120px auto;
+    justify-content: center;
+}
+
+.left-col{
+    flex-direction: column;
+    gap: 20px;
+}
+.small-card1{
+    position: relative;
+    /* background-image: url(/assets/deal-bloom.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+   
+    
+
+}
+.small-card2{
+    position: relative;
+    /* background-image: url(/assets/deal-ana.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+
+    border-radius: 12px;
+    
+
+}
+.large-card3{
+    position: relative;
+    /* background-image: url(/assets/deal-zabo.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    border-radius: 12px;
+}
+
+.typo-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    
+}
+.type {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+.link{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section class="latest-deal">
+            <div class="latest-deal-text">
+                <h3 class="deal-title noto-serif-font"><span class="orange-color">Latest</span>  Deals</h3>
+                <p class="deal-description inter-font deep-gray">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            </div>
+            <div class="deal-cards-container display-flex">
+                <div class="left-col display-flex">
+                    <div class="small-card1 display-flex">
+                        <img src="./assets/deal-bloom.png" alt="" class="small-card1-img">
+                        <div class="typo-card">
+                            <p class="type noto-serif-font">60% Off | Bloom Plant</p>
+                            <a href="" class="link inter-font">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="small-card2 display-flex">
+                        <img src="./assets/deal-ana.png" alt="" class="small-card2-img">
+                        <div class="typo-card">
+                            <p class="type noto-serif-font">30% Off | Ana  Plant</p>
+                            <a href="" class="link inter-font">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-col">
+                        <div class="large-card3 display-flex">
+                            <img src="./assets/deal-zabo.png" alt="" class="large-card1-img">
+                        <div class="typo-card">
+                            <p class="type noto-serif-font">25% Off | Zabo Plant</p>
+                            <a href="" class="link inter-font">Shop Now</a>
+                        </div>
+                    </div>
+                    </div>
+
+            </div>
+               
+         </section>
+</body>
+</html>
